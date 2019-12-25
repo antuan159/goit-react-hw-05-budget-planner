@@ -5,6 +5,7 @@
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {
+    "gh-pages": "^2.1.1",
     "react": "16.8.6",
     "react-dom": "16.8.6",
     "react-redux": "^7.1.3",
@@ -20,8 +21,11 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
+  "homepage": "https://antuan159.github.io/goit-react-hw-05-budget-planner",
   "browserslist": [
     ">0.2%",
     "not dead",
