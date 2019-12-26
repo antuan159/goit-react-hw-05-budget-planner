@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import budgetActions from '../components/redux/actions/budgetActions';
+import budgetActions from '../components/redux/Budget/budgetActions';
 import Form from './shared/Form';
 import Label from './shared/Label';
 import Input from './shared/Input';

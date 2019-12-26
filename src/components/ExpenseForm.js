@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import expenseActions from './redux/actions/expenseActions';
+import expenseActions from '../components/redux/Expense/expenseActions';
 import Form from './shared/Form';
 import Label from './shared/Label';
 import Input from './shared/Input';

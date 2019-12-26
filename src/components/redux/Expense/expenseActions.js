@@ -1,5 +1,5 @@
 import shortid from 'shortid';
-import expenseTypes from '../types/expenseTypes';
+import expenseTypes from '../Expense/expenseTypes';
 
 const add = ({ name, amount }) => {
   return {

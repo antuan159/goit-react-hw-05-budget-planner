@@ -1,4 +1,4 @@
-import budgetTypes from '../types/budgetTypes';
+import budgetTypes from '../Budget/budgetTypes';
 
 const add = budget => ({
   type: budgetTypes.ADD_BUDGET,

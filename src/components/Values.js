@@ -1,4 +1,7 @@
 import React from 'react';
+import { connect } from 'react-redux';
+import budgetSelectors from './redux/Budget/budgetSelectors';
+import expenseSelectors from './redux/Expense/expenseSelectors';
 import styled from 'styled-components';
 import Value from './Value';
 
@@ -16,4 +19,12 @@ const Values = ({ budget, expenses, balance }) => (
   </Container>
 );
 
-export default Values;
+const mapStateToProps = state => {
+  return {
+    budget: budgetSelectors.getBudget(state),
+    expenses: expenseSelectors.calculateTotalExpenses(state),
+    balance: expenseSelectors.calculateBalance(state),
+  };
+};
+
+export default connect(mapStateToProps)(Values);

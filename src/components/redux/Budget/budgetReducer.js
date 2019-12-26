@@ -1,9 +1,9 @@
-import budgetTypes from '../types/budgetTypes';
+import budgetTypes from '../Budget/budgetTypes';
 
 const budgetReducer = (state = 0, action) => {
   switch (action.type) {
     case budgetTypes.ADD_BUDGET:
-      return action.payload.budget;
+      return Number(action.payload.budget);
 
     default:
       return state;

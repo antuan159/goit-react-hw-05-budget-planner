@@ -1,4 +1,4 @@
-import expenseTypes from '../types/expenseTypes';
+import expenseTypes from '../Expense/expenseTypes';
 
 const expenseReducer = (state = [], action) => {
   switch (action.type) {
