@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import budgetSelectors from './redux/Budget/budgetSelectors';
-import expenseSelectors from './redux/Expense/expenseSelectors';
+import budgetSelectors from '../redux/Budget/budgetSelectors';
+import expenseSelectors from '../redux/Expense/expenseSelectors';
 import styled from 'styled-components';
 import Value from './Value';
 

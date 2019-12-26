@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import expenseActions from '../components/redux/Expense/expenseActions';
-import expenseSelectors from '../components/redux/Expense/expenseSelectors';
+import expenseActions from '../redux/Expense/expenseActions';
+import expenseSelectors from '../redux/Expense/expenseSelectors';
 import styled from 'styled-components';
 import Button from './shared/Button';
 
